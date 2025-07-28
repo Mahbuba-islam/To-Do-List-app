@@ -8,8 +8,9 @@ const addTaskBtn = document.getElementById('add-task')
      div.classList.add('list-items')
      div.innerHTML = `
     <div class="taskBtn"><button onclick="completedTask(this)" class="circle-btn"><div class="circle" ></div>
-      </button> <p>${taskInput.value}</p> <p class="timeStamp">${timeStamp}</p>
+      </button> <p>${taskInput.value}</p>  <p class="timeStamp">${timeStamp}</p>
     </div> 
+   
  <img src="./pencil-color-icon.webp" class="edit" alt="">
     <img src="./free-icon-garbage-bin-10420.png" class="delete" alt="">
           
