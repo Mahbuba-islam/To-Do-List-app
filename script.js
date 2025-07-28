@@ -1,6 +1,6 @@
 const taskInput = document.getElementById('task-input')
 const addTaskBtn = document.getElementById('add-task')
-
+ const timeStamp = new Date().toLocaleString()
     addTaskBtn.addEventListener('click', () => {
       if(taskInput.value){
      const listItemContainer = document.querySelector('.list-item-container')
@@ -8,13 +8,17 @@ const addTaskBtn = document.getElementById('add-task')
      div.classList.add('list-items')
      div.innerHTML = `
     <div class="taskBtn"><button onclick="completedTask(this)" class="circle-btn"><div class="circle" ></div>
-      </button> <p>${taskInput.value}</p></div> 
-      <button class="delete">x</button
-    
+      </button> <p>${taskInput.value}</p> <p class="timeStamp">${timeStamp}</p>
+    </div> 
+ <img src="./pencil-color-icon.webp" class="edit" alt="">
+    <img src="./free-icon-garbage-bin-10420.png" class="delete" alt="">
+          
  `
 
      listItemContainer.appendChild(div)
      document.getElementById('task-input').value = ''
+    
+
     }
     else{
         alert('please add your task')
@@ -39,23 +43,24 @@ const completedTask = (button) => {
 
   const listItemContainer = document.querySelector('.list-item-container')
 listItemContainer.addEventListener('click', (e) => {
+  //  delete
 if(e.target.classList.contains('delete')){
    e.target.parentNode.remove();
 }
+  // edit
+if(e.target.classList.contains('edit')){
+ const taskTextParent = e.target.closest('.list-items')
+ const taskText = taskTextParent.querySelector('.taskBtn p')
+ const newTaskText = prompt('Edit Your task :', taskText.innerText)
+ if (newTaskText !== null && newTaskText !== '') {
+      taskText.innerText = newTaskText;
+  
+  }
+
+}
+
+
+
 })
 
-
-//  completedTask = (button) =>{
-
-//    const li = button.closest('li')
-//    const circle = li.querySelector('.circle')
-   
-// //    const existingImg = circle.querySelector('.tick-mark')
-// //    if(existingImg){
-   
-// //    }
-//   circle.innerHTML = `<img  src="./Free Check Tick.png" alt="" class="tick-mark">`
-//          li.innerText = 'completed'
-   
-//  }
 
