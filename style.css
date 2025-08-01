@@ -1,177 +1,179 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+/*  Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-      background: linear-gradient(to right, #320358, #6a3105);
+/*  Body Background */
+body {
+  background: linear-gradient(to right, #320358, #6a3105);
 }
 
-.container{
-   display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+/* Layout Container */
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
 
-.to-do-list{ 
-   padding: 30px 40px;
-    background-color: white;
-    border-radius: 10px; 
-    max-width: 900px;
-    min-width: 340px
-   
-   
+/*  To-Do List Box */
+.to-do-list {
+  padding: 30px 40px;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 900px;
+  min-width: 340px;
 }
 
-.title-container{
- display: flex;
- justify-content: flex-start;
- align-items: center;
- margin: 10px 0px;
+/* Title Section */
+.title-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0;
 }
 
-.input-container{
-    background-color: #320358;
-    display: flex;
-     background-color: rgb(235, 233, 233);
-     justify-content: center;
-     margin: 15px 0px;
-   
-}
-.input-container input{
-    border: none;
-    outline: none;
-    background-color: rgb(235, 233, 233);
-    padding: 10px 10px;
-    border-radius: 10px 0px 0px 10px;
-    width: 300px;
-     
-}
-.input-container>button{
-    border: none;
-    outline: none;
-    border-radius: 0px 10px 10px 0px;
-    padding: 10px 10px;
-}
-.heading>h1{
-    width: 200px;
-    color: white;
-    font-weight: bold;
-    line-height: 1.5;
-    font-size: 40px;
-}
-.heading>h1>span{
-    color: #eab012;
-}
-.title-container img{
- width: 50px;
- height: 50px;
+.title-container img {
+  width: 50px;
+  height: 50px;
 }
 
-.input-container{
-    background-color: rgba(255, 255, 255, 0.819);
-   
+/*  Heading */
+.heading > h1 {
+  width: 200px;
+  color: white;
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 40px;
 }
 
-/* result part */
-.list-item-container{
-    margin-top: 40px;
+.heading > h1 > span {
+  color: #eab012;
 }
-.list-items{
+
+/*  Input Section */
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  background-color: rgba(255, 255, 255, 0.819);
+}
+
+.input-container input {
+  border: none;
+  outline: none;
+  background-color: rgb(235, 233, 233);
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  width: 300px;
+}
+
+.input-container > button {
+  border: none;
+  outline: none;
+  border-radius: 0 10px 10px 0;
+  padding: 10px;
+}
+
+/*  Task List Section */
+.list-item-container {
+  margin-top: 40px;
+}
+
+.list-items {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 8px 12px;
   border-bottom: 1px solid #ddd;
-  
 }
 
-  
-
-.taskBtn{
-    width: 230px;
-    display: flex;
-   background-color: none;
-    border: none;
-    outline: none;
-    border-radius: 100%;
-    gap: 5px;
-
-}
-.circle-btn{
-     border: none;
-    outline: none;
-     border-radius: 100%;
-     height: 20px;
-    width: 20px;
-   
-}
-.tik-mark{
-   height: 20px;
-    width: 20px;
-    border-radius: 100%;
-    border: 2px solid rgb(11, 146, 47);
+.taskBtn {
+  width: 230px;
+  display: flex;
+  gap: 5px;
+  border: none;
+  outline: none;
+  background: none;
 }
 
-.circle{
-    height: 20px;
-    width: 20px;
-    border-radius: 100%;
-    border: 2px solid black;
-}
-.list-items>li{
-    list-style: none;
-    display: flex;
-    gap: 10px;
-   align-items: center;
-
+/* ✅ Circle Buttons */
+.circle-btn {
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
 }
 
-.list-items>p{
-    color: rgb(109, 108, 108);
+.circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 2px solid black;
 }
 
-.delete{
-    border: none;
-    outline: none;
-    background-color: white;
-    color: rgb(130, 128, 128);
-    font-size: 18px;
+.tik-mark {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 2px solid rgb(11, 146, 47);
 }
 
+/*  Edit & 🗑️ Delete Icons */
+.edit {
+  width: 15px;
+}
+
+.delete {
+  width: 20px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: rgb(130, 128, 128);
+  font-size: 18px;
+}
+
+/* 🕒 Timestamp */
 .timeStamp {
   display: block;
-  font-size: 0.50rem;
+  font-size: 0.5rem;
   color: #888;
   margin-top: 4px;
 }
-.edit {
-    width: 15px;
-   
-}
- .delete{
-    width: 20px;
 
-}
-
-@media screen and (max-width:768px) {
-    .container{
-   display: flex;
-   flex-direction: column-reverse;
-   
-}
-.to-do-list{ 
-   padding: 30px 20px;
-   
+/*  Filter Buttons */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 30px;
+  padding: 10px;
 }
 
-.input-container input{
-  width: 200px;
-     
+.btn-container > button {
+  background-color: rgb(234, 228, 228);
+  padding: 7px 15px;
+  border-radius: 7px;
+  border: none;
+  font-weight: 600;
 }
 
+/* 📱 Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+  }
 
+  .to-do-list {
+    padding: 30px 20px;
+  }
+
+  .input-container input {
+    width: 200px;
+  }
 }

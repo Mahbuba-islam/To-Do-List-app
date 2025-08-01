@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">+
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do-List-app</title>
-   <link rel="shortcut icon" href="./To Do List Icon Vect.png" type="image/x-icon">
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List App</title>
+  <link rel="shortcut icon" href="./To Do List Icon Vect.png" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="to-do-list">
-            <div class="title-container">
-            <h1>To-Do-List</h1>
-            <img src="./To Do List Icon On T.png" alt="">
-            </div>
-            
-            <div class="input-container">
-                <input type="text" id="task-input" placeholder="add your task">
-                <button id="add-task">Add</button>
-            </div>
 
-             <!-- result -->
-         <div class="list-item-container">
-           
-         </div>
-          
-     
+  <div class="container">
+
+    <!-- To-Do List Panel -->
+    <div class="to-do-list">
+
+      <!--  Title Section -->
+      <div class="title-container">
+        <h1>To-Do List</h1>
+        <img src="./To Do List Icon On T.png" alt="To-Do Icon">
+      </div>
+
+      <!--  Input Section -->
+      <div class="input-container">
+        <input type="text" id="task-input" placeholder="Add your task">
+        <button id="add-task">Add</button>
+      </div>
+
+      <!-- Task List & Filters -->
+      <div class="list-item-container">
+
+        <!--  Filter Buttons -->
+        <div class="btn-container">
+          <button id="all" class="btn">All</button>
+          <button id="completed" class="btn">Completed</button>
+          <button id="unCompleted" class="btn">Uncompleted</button>
         </div>
 
-       
-        <div class="heading">
-            <h1>Your Daily <span>Mission</span> Starts Here</h1>
-        </div>
+      </div>
+
     </div>
 
+    <!-- Motivational Sidebar -->
+    <div class="heading">
+      <h1>Your Daily <span>Mission</span> Starts Here</h1>
+    </div>
 
+  </div>
 
+  <!--  Script -->
+  <script src="./script.js"></script>
 
-    <script src="./script.js"></script>
 </body>
 </html>

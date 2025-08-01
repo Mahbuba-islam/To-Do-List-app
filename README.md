@@ -1,22 +1,19 @@
 # 📝 To-Do List App
 
-A responsive and interactive To-Do List application built with HTML, CSS , and JavaScript. 
-Designed to help users manage tasks efficiently with a clean and intuitive UI.
+A sleek and responsive To-Do List application built with HTML, CSS, and JavaScript. It allows users to add, 
+edit, delete, and filter tasks with timestamps and completion tracking.
 
-## 🌐 Live Demo
-
-[Visit the App](https://to-do-list-mahbuba.surge.sh)
-
+---
+# live-link - (https://to-do-list-mahbuba.surge.sh/)
 ## 🚀 Features
 
-- Add, edit, and delete tasks
-- Responsive design for mobile and desktop
-- Timestamp localization and icon alignment
-- Modular and reusable code structure
+- ✅ Add tasks with real-time timestamps
+- ✏️ Edit tasks inline via prompt
+- 🗑️ Delete tasks instantly
+- 🎯 Mark tasks as completed with a visual tick
+- 🔍 Filter tasks by All, Completed, or Uncompleted
+- 🎨 Responsive design for mobile and desktop
+- 🌈 Stylish UI with gradient background and icon integration
 
-## 🛠️ Technologies Used
-
-- HTML5
-- CSS
-- JavaScript (DOM manipulation, event handling)
+---
 
